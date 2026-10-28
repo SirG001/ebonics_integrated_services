@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e6b3a"/>
+      <stop offset="100%" stop-color="#0f3d20"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4a853"/>
+      <stop offset="50%" stop-color="#f0c96e"/>
+      <stop offset="100%" stop-color="#c9a84c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- White background circle for clean look -->
+  <circle cx="150" cy="150" r="148" fill="white"/>
+
+  <!-- Main outer circle -->
+  <circle cx="150" cy="150" r="140" fill="url(#bgGrad)"/>
+
+  <!-- Gold outer ring -->
+  <circle cx="150" cy="150" r="140" fill="none" stroke="url(#goldGrad)" stroke-width="5"/>
+
+  <!-- Inner ring (decorative) -->
+  <circle cx="150" cy="150" r="120" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.5"/>
+
+  <!-- Shield body -->
+  <path d="M150,55 L205,85 L205,155 Q205,195 150,225 Q95,195 95,155 L95,85 Z"
+        fill="url(#bgGrad)" stroke="url(#goldGrad)" stroke-width="3"/>
+
+  <!-- House shape inside shield -->
+  <polygon points="150,85 185,108 185,150 115,150 115,108"
+           fill="none" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- House door -->
+  <rect x="137" y="127" width="26" height="23" rx="2" fill="url(#goldGrad)" opacity="0.9"/>
+  <!-- House window left -->
+  <rect x="120" y="112" width="12" height="10" rx="1" fill="url(#goldGrad)" opacity="0.7"/>
+  <!-- House window right -->
+  <rect x="168" y="112" width="12" height="10" rx="1" fill="url(#goldGrad)" opacity="0.7"/>
+
+  <!-- Hardhat / construction helmet above house -->
+  <ellipse cx="150" cy="80" rx="24" ry="14" fill="url(#goldGrad)"/>
+  <rect x="126" y="76" width="48" height="8" rx="4" fill="#c9a84c"/>
+  <rect x="138" y="72" width="24" height="6" rx="3" fill="#d4a853"/>
+
+  <!-- Crossed tools below house (hammer) -->
+  <line x1="115" y1="165" x2="185" y2="180" stroke="url(#goldGrad)" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+  <line x1="185" y1="165" x2="115" y2="180" stroke="url(#goldGrad)" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Steel beam / I-beam below shield -->
+  <rect x="100" y="188" width="100" height="8" rx="2" fill="url(#goldGrad)" opacity="0.7"/>
+  <rect x="100" y="192" width="100" height="2" rx="1" fill="#c9a84c" opacity="0.9"/>
+
+  <!-- TOP TEXT: EBONICS -->
+  <path id="topArc" d="M 35,150 A 115,115 0 0,1 265,150" fill="none"/>
+  <text font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="bold" fill="url(#goldGrad)" letter-spacing="5">
+    <textPath href="#topArc" startOffset="12%">EBONICS</textPath>
+  </text>
+
+  <!-- BOTTOM TEXT: INTEGRATED SERVICES NIG LTD -->
+  <path id="bottomArc" d="M 35,150 A 115,115 0 0,0 265,150" fill="none"/>
+  <text font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="url(#goldGrad)" letter-spacing="1.5">
+    <textPath href="#bottomArc" startOffset="5%">INTEGRATED SERVICES NIG LTD</textPath>
+  </text>
+
+  <!-- Small decorative dots at sides -->
+  <circle cx="35" cy="150" r="4" fill="url(#goldGrad)"/>
+  <circle cx="265" cy="150" r="4" fill="url(#goldGrad)"/>
+</svg>
